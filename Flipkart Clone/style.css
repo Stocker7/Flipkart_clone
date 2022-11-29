@@ -1,0 +1,495 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/**HEADER**/
+header {
+    background-color: rgb(90, 90, 247);
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+}
+
+.head_section {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    justify-content: center;
+
+}
+
+
+
+/**LOGO AND ITS COMPONENTS ALL ARE HERE **/
+.logo {
+    color: white;
+    font-size: 1.3rem;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.logo a:hover {
+    text-decoration: underline;
+}
+
+.logo a span {
+
+    color: yellow;
+}
+
+/**LOGO AND ITS COMPONENTS ALL ARE END HERE **/
+
+
+
+/**SEARCHBAR AND ITS COMPONENTS ALL ARE HERE **/
+
+.btn_search {
+    margin-left: 2rem;
+}
+
+.head_section input {
+    width: 20rem;
+    height: 2rem;
+    outline: none;
+    border: none;
+    padding-left: 1rem;
+    font-size: 0.9rem;
+}
+
+.btn_search button {
+    height: 2rem;
+    width: 2rem;
+    border: none;
+    font-size: 0.9em;
+    margin-left: -2rem;
+    color: rgb(116, 116, 243);
+    background-color: #fff;
+    cursor: pointer;
+}
+
+/**SEARCHBAR AND ITS COMPONENTS ALL ARE END HERE **/
+
+
+
+/**LOGIN BUTTON AND ITS COMPONENTS ALL ARE HERE **/
+.Login_btn {
+    width: 7rem;
+    height: 1.8rem;
+    margin-left: 3rem;
+    background-color: white;
+    border: none;
+    font-size: 0.9rem;
+    color: rgb(116, 116, 243);
+    cursor: pointer;
+}
+
+/**LOGIN BUTTON AND ITS COMPONENTS ALL ARE END HERE **/
+
+
+
+/**SELLER BUTTON AND ITS COMPONENTS ALL ARE HERE **/
+.seller_link {
+    color: white;
+    text-decoration: none;
+    margin: 0rem 2rem 0rem 3rem;
+    font-size: 1rem;
+}
+
+.seller_link:hover {
+    text-decoration: underline;
+}
+
+/**SELLER BUTTON AND ITS COMPONENTS ALL ARE END HERE **/
+
+
+
+/**CART BUTTON AND ITS COMPONENTS ALL ARE HERE **/
+
+.cart_btn a {
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.cart_btn i {
+    color: white;
+}
+
+.cart_btn a:hover {
+    text-decoration: underline;
+}
+
+/**CART BUTTON AND ITS COMPONENTS ALL ARE END HERE **/
+/**HEADER**/
+
+/**MEDIA QUERY OF HEAD AND ITS COMPONENTS ALL ARE HERE **/
+
+@media only screen and (max-width: 900px) {
+    header {
+        background-color: rgb(90, 90, 247);
+        width: 100%;
+    }
+
+    .head_section {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        justify-content: space-around;
+        padding-left: 1rem;
+    }
+
+    .logo {
+        color: white;
+        font-size: 1rem;
+    }
+
+    .logo a {
+        text-decoration: none;
+        color: white;
+        font-size: 0.6rem;
+    }
+
+    .logo a:hover {
+        text-decoration: underline;
+    }
+
+    .logo a span {
+        color: yellow;
+    }
+
+    .btn_search {
+        margin-left: 0rem;
+    }
+
+    .head_section input {
+        width: 9rem;
+        height: 2rem;
+        outline: none;
+        border: none;
+        padding-left: 0.3rem;
+        font-size: 0.9rem;
+    }
+
+    .btn_search button {
+        height: 2rem;
+        width: 2rem;
+        border: none;
+        font-size: 0.9em;
+        margin-left: -2rem;
+        color: rgb(116, 116, 243);
+        background-color: #fff;
+        cursor: pointer;
+    }
+
+    .Login_btn {
+        width: 5rem;
+        height: 1.8rem;
+        margin-left: 0.4rem;
+        background-color: white;
+        border: none;
+        font-size: 0.9rem;
+        color: rgb(116, 116, 243);
+        cursor: pointer;
+    }
+
+    .seller_link {
+        color: white;
+        text-decoration: none;
+        margin: 0rem 0rem 0rem 0.8rem;
+        font-size: 1rem;
+    }
+
+    .seller_link:hover {
+        text-decoration: underline;
+    }
+
+    .cart_btn a {
+        color: white;
+        font-size: 0.7rem;
+        text-decoration: none;
+    }
+
+    .cart_btn i {
+        color: white;
+    }
+
+    .cart_btn a:hover {
+        text-decoration: underline;
+    }
+}
+
+/**MEDIA QUERY OF HEAD AND ITS COMPONENTS ALL ARE END HERE **/
+
+
+/**contain_item_name AND ITS COMPONENTS ALL ARE END HERE **/
+
+.contain_item_name {
+    padding-left: 3rem;
+    padding-bottom: 1rem;
+    display: block;
+    background-color: white;
+    border: 2px solid white;
+
+}
+
+.contain_item_name a {
+    display: inline-block;
+    padding: 4rem 1.5rem 0rem 2rem;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.contain_item_name a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+/**ARROWN FUNCTION **/
+.arrow {
+    border: solid black;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.contain_item_name a i:hover {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    border: solid blue;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+
+/**ITEM CONTAINER AND ITS FUNCTION**/
+.items_container {
+    height: auto;
+    background-color: rgb(228, 227, 227);
+    padding: 0.5rem;
+}
+
+.item_container_1 {
+    display: flex;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+.item_container_1_1 {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bg_image_req {
+    background-image: url(Images/images\ \(1\).jpg);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.bg_image_req h2 {
+    position: relative;
+    top: 50%;
+    color: black;
+}
+
+.bg_image_req button {
+    position: relative;
+    top: 50%;
+    left: 20%;
+    padding: 0.8rem;
+    background-color: blue;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.printer {
+    margin-left: 1.8rem;
+    text-align: center;
+}
+
+.printer p {
+    font-size: 1.1rem;
+}
+
+.printer font {
+    color: red;
+}
+
+.Projector {
+    margin-left: 1.8rem;
+    text-align: center;
+}
+
+.Projector p {
+    font-size: 1.1rem;
+}
+
+.Projector font {
+    color: red;
+}
+
+.hair_dryer {
+    margin-left: 1.8rem;
+    text-align: center;
+}
+
+.hair_dryer p {
+    font-size: 1.1rem;
+}
+
+.hair_dryer font {
+    color: red;
+}
+
+.add {
+    margin-left: 0.5rem;
+}
+
+.hover {
+    cursor: pointer;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.button_arrow{
+    background-color: rgb(241, 237, 237);
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+    cursor: pointer;
+}
+
+
+/**ITEM CONTAINER AND ITS FUNCTION END HERE**/
+
+.bg_image_req_2{
+    background-image: url(Images/images.jpg);
+    width: 15rem;
+    margin: 1rem;
+    height: 20rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+}
+.bg_image_req_2 h2 {
+    position: relative;
+    top: 50%;
+    color: black;
+}
+
+.bg_image_req_2 button {
+    position: relative;
+    top: 50%;
+    left: 20%;
+    padding: 0.8rem;
+    background-color: blue;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.item_container_2{
+    margin-bottom: 0.5rem;
+}
+.item_container_3{
+    margin-bottom: 0.5rem;
+}
+
+
+/**LINKS ARE ALL HERE**/
+
+.link_section{
+    background-color: rgb(229, 226, 226);
+    padding: 2rem;
+}
+p{
+    color: rgb(148, 148, 148);
+}
+.directory p{
+    font-size: 1rem;
+    display: inline-block;
+    padding-bottom: 2rem;
+}
+.directory{
+    display: block;
+}
+.most_searched p{
+    display: inline-block;
+}
+.most_searched a{
+    text-decoration: none;
+    color: black;
+}
+
+.question_answers{
+    margin-top: 2rem;
+}
+
+.question_answers .question{
+    color: black;
+    font-size: 18px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.footer{
+    background-color: rgb(36, 36, 56);
+    padding: 2rem;
+    display: flex;
+}
+.footer font{
+    color: rgb(148, 148, 148);
+}
+.cont_1{
+    display: flex;
+    flex-direction: row;
+}
+.about{
+   display: inline-block;
+   width: 12rem;
+}
+.about font{
+    display: inline-block;
+    padding-bottom: 1rem;
+}
+.about a{
+    text-decoration: none;
+    color: white;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+}
+.about a:hover{
+    text-decoration: underline;
+}
+.cont_2{
+    margin-left: 2rem;
+}
+.cont_2 address{
+    color: white;
+}
+.cont_2 .about{
+    margin: 0rem 1rem 0rem 1rem;
+}
